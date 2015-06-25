@@ -1,0 +1,9 @@
+name: Mall For PhilGo
+type: theme
+description: mall theme for philgo.com
+core: 8.x
+libraries:
+  - mall-philgo/default
+features:
+  - favicon
+screenshot: screenshot.png
