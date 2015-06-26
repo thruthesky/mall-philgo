@@ -1,19 +1,19 @@
 <nav class="top">
     <div class="left">
-        <a href="#">Home</a>
+        <a href="/">{{ language == 'ko' ? '필고 홈' : 'PhilGo' }}</a>
         <span class="dot">•</span>
-        <a href="#">Login</a>
+        <a href="/user/login">{{ language == 'ko' ? '로그인' : 'Login' }}</a>
         <span class="dot">•</span>
-        <a href="#">Register</a>
+        <a href="/mall/member/register">{{ language == 'ko' ? '회원가입' : 'Register' }}</a>
         <span class="dot">•</span>
-        <a href="#">Community</a>
+        <a href="/">{{ language == 'ko' ? '토론' : 'Discussion' }}</a>
         <span class="dot">•</span>
-        <a href="#">QnA</a>
+        <a href="/">{{ language == 'ko' ? '구인구직' : 'Jobs' }}</a>
     </div>
     <div class="right">
-        <a href="#">Adv</a>
+        <a href="#">{{ language == 'ko' ? '광고문의' : 'Advertisement' }}</a>
         <span class="dot">•</span>
-        <a href="#">Help</a>
+        <a href="#">{{ language == 'ko' ? '운영자 요청/문의' : 'Inquery' }}</a>
         <span class="dot">•</span>
         <a href="#">070-7893-1741</a>
     </div>

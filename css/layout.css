@@ -1,7 +1,7 @@
 header,
 footer,
 #page-content {
-    margin:0 2px;
+    margin:0 6px;
     max-width:960px;
 }
 
@@ -18,7 +18,11 @@ footer,
 
 
 #page-content {
+<<<<<<< HEAD
 	/*temp commented by benjamin
     background-color: #d3e8f4;
 	*/
+=======
+    background-color: white;
+>>>>>>> f8c5d10d1745668ee2c1402530cecaa41fafae76
 }

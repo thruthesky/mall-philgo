@@ -7,6 +7,7 @@ default:
       css/component.css: {}
       css/component.menu.css: {}
       css/component-grid.css: {}
+      css/component.header.css: {}
       css/component.header-top.css: {}
       css/component.header-content.css: {}
       css/component.header-menu.css: {}

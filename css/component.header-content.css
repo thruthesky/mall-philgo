@@ -1,11 +1,12 @@
 header .content {
     position:relative;
+    margin-bottom:12px;
 }
 
 header .content .left {
     position:absolute;
     display:none;
-    top:46px;
+    top:45px;
     left:0;
 }
 header .content .left img {
@@ -14,7 +15,7 @@ header .content .left img {
 header .content .right {
     position:absolute;
     display:none;
-    top:46px;
+    top:45px;
     right:0;
 }
 header .content .right img {
