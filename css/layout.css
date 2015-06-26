@@ -1,7 +1,7 @@
 header,
 footer,
 #page-content {
-    margin:0 2px;
+    margin:0 6px;
     max-width:960px;
 }
 
@@ -18,5 +18,5 @@ footer,
 
 
 #page-content {
-    background-color: #d3e8f4;
+    background-color: white;
 }
