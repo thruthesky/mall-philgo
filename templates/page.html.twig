@@ -1,0 +1,7 @@
+{% include 'themes/mall_philgo/templates/menu.html.twig' %}
+
+{% if is_front %}
+    {% include 'themes/mall_philgo/templates/first-page.html.twig' %}
+{% else %}
+    {{ page.content }}
+{% endif %}
