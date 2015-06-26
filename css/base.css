@@ -4,8 +4,13 @@ body {
     font-size:10pt;
 }
 
+img{
+	border:0;
+	padding:0;
+	margin:0;
+}
+
 a {
     color:#040404;
     text-decoration: none;
 }
-

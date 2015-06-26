@@ -1,0 +1,31 @@
+{% set items = mall_item_list.items %}
+
+<div class='mall-item-list front-page clearfix'>
+	<div class='title'>Latest Items</div>
+		<div class='items'>
+		{% for i in items %}
+			{% set item = i.entity %}
+			{% set images = i.images %}
+			{% set price = i.rendered_price %}
+			{% if ( loop.index - 1 ) is divisibleby( item_per_page ) and loop.index != 1 %}
+				{% set count = count + 1 %}
+			{% endif %}
+			<a href='/mall/item/view?item_id={{ item.id.value }}'>
+				<div class='item' page='{{ count }}'>
+					<div class='photo'>
+					{% if images.item_image_thumbnail[0] %}
+						{% set url_thumb = images.item_image_thumbnail[0].url_large %}
+					{% else %}
+						{% set url_thumb = '/themes/x8/templates/mall/img/mall-no-image.png' %}
+					{% endif %}
+						<img src='{{ url_thumb }}'/>					
+					</div>
+					<div class='info'>
+						<div class='title'>{{ item.title.value }}</div>
+						<div class='price'>{{ price }}<span class='label popular'>Popular</span></div>
+					</div>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+</div>

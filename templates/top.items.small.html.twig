@@ -1,0 +1,83 @@
+{% set items = mall_top_small.items%}
+<div class='top-items-small'>
+	<div class='arrow left'><img src='/themes/x8/templates/mall/img/top_arrow_left.png'/></div>
+	<div class='arrow right'><img src='/themes/x8/templates/mall/img/top_arrow_right.png'/></div>
+	<div class='inner clearfix'>
+		{% if ( items | length ) > 1 %}
+			{% set item = ( items | last ).entity %}
+			{% set images = ( items | last ).images %}
+			{% set price = ( items | last ).rendered_price %}
+			<div class='item clearfix'>
+				<img class='fake 'src='/themes/x8/templates/mall/img/banner-small-fake.png'/>
+				<div class='photo'>
+				{% if images.item_image_thumbnail[0] %}
+					{% set url_thumb = images.item_image_thumbnail[0].url_large %}
+				{% else %}
+					{% set url_thumb = '/themes/x8/templates/mall/img/mall-no-image.png' %}
+				{% endif %}
+					<img src='{{ url_thumb }}'/>												
+				</div>
+				<div class='info'>
+					<div class='title'>{{ item.title.value }}</div>
+					<div class='content'>{{ item.content.value }}</div>
+				</div>						
+			</div>
+		{% endif %}
+		{% for i in items %}
+			{% set item = i.entity %}
+			{% set images = i.images %}
+			{% set price = i.rendered_price %}
+			<a href='/mall/item/view?item_id={{ item.id.value }}'>
+				<div class='item clearfix' page='{{ loop.index }}'>
+					<img class='fake 'src='/themes/x8/templates/mall/img/banner-small-fake.png'/>
+					<div class='photo'>
+					{% if images.item_image_thumbnail[0] %}
+						{% set url_thumb = images.item_image_thumbnail[0].url_large %}
+					{% else %}
+						{% set url_thumb = '/themes/x8/templates/mall/img/mall-no-image.png' %}
+					{% endif %}
+						<img src='{{ url_thumb }}'/>												
+					</div>
+					<div class='info'>
+						<div class='title'>{{ item.title.value }}</div>
+						<div class='content'>{{ item.content.value }}</div>
+					</div>						
+				</div>
+			</a>
+		{% endfor %}
+		{% if ( items | length ) > 1 %}
+			{% set item = ( items | first ).entity %}
+			{% set images = ( items | first ).images %}
+			{% set price = ( items | first ).rendered_price %}
+			<div class='item clearfix'>
+				<img class='fake 'src='/themes/x8/templates/mall/img/banner-small-fake.png'/>
+				<div class='photo'>
+				{% if images.item_image_thumbnail[0] %}
+					{% set url_thumb = images.item_image_thumbnail[0].url_large %}
+				{% else %}
+					{% set url_thumb = '/themes/x8/templates/mall/img/mall-no-image.png' %}
+				{% endif %}
+					<img src='{{ url_thumb }}'/>												
+				</div>
+				<div class='info'>
+					<div class='title'>{{ item.title.value }}</div>
+					<div class='content'>{{ item.content.value }}</div>
+				</div>						
+			</div>
+		{% endif %}		
+	</div>
+	<div class='page-wrapper'>
+		{% set length = ( items|length ) %}
+		{% if length > 10 %}
+			{% set length = 10 %}
+		{% endif %}
+		{% for page in 1..length%}
+			{% if loop.index == 1 %}
+				{% set selected = " class=selected" %}
+			{% else %}
+				{% set selected = ''%}
+			{% endif %}
+			<span{{ selected }} page='{{ page }}'></span>
+		{% endfor %}
+	</div>
+</div>
