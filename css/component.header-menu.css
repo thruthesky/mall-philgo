@@ -21,3 +21,8 @@ header .menu span {
     float:left;
     padding:10px 8px 0;
 }
+
+
+header .mall-item-add {
+    color:yellow;
+}
