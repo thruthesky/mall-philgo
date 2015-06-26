@@ -1,9 +1,15 @@
-{% include 'themes/mall_philgo/templates/menu.html.twig' %}
+<header>
+    {% include 'themes/mall_philgo/templates/header.html.twig' %}
+</header>
 
+<div id="page-content">
 {% if is_front %}
     {% include 'themes/mall_philgo/templates/first-page.html.twig' %}
 {% else %}
-	<div class='content'>
-		{{ page.content }}
-	</div>
+    {{ page.content }}
 {% endif %}
+</div>
+
+<footer>
+    {% include 'themes/mall_philgo/templates/footer.html.twig' %}
+</footer>

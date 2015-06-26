@@ -2,7 +2,7 @@ img.fake{
 	opacity:0;
 }
 
-.content{
+#page-content{
 	max-width:960px;
 	margin:auto;
 }
@@ -26,7 +26,7 @@ img.fake{
 .top-items.banner .inner .item{	
 	display:inline-block;
 	position:relative;	
-	margin-right:-3px;
+	margin-right:-4px;
 	width:50%;
 	overflow:hidden;
 }
@@ -237,8 +237,7 @@ img.fake{
 .todays-pick section.grid.bottom .b .item-wrapper .item .photo img{
 	position:absolute;
 	left:0;
-	top:0;
-	z-index:-1;
+	top:0;	
 }
 
 .todays-pick section.grid.bottom .b .item-wrapper .item .photo img.fake{
@@ -422,3 +421,9 @@ img.fake{
 		display:block;
 	}
 }
+
+.dot {
+    padding:0 2px;
+    color:#898989;
+}
+
