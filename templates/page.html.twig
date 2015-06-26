@@ -3,5 +3,7 @@
 {% if is_front %}
     {% include 'themes/mall_philgo/templates/first-page.html.twig' %}
 {% else %}
-    {{ page.content }}
+	<div class='content'>
+		{{ page.content }}
+	</div>
 {% endif %}
