@@ -4,7 +4,8 @@ header .content {
 
 header .content .left {
     position:absolute;
-    top:32px;
+    display:none;
+    top:46px;
     left:0;
 }
 header .content .left img {
@@ -12,7 +13,8 @@ header .content .left img {
 }
 header .content .right {
     position:absolute;
-    top:32px;
+    display:none;
+    top:46px;
     right:0;
 }
 header .content .right img {
@@ -21,7 +23,7 @@ header .content .right img {
 
 header .content .center {
     margin:16px auto 0;
-    width:360px;
+    max-width:360px;
     text-align: center;
 }
 
@@ -34,4 +36,13 @@ form.search input[type='text'] {
     height:40px;
     box-sizing: border-box;
     width:100%;
+}
+
+@media all and (min-width: 760px) {
+    header .content .left { display: block; }
+    header .content .right { display: block; }
+    header .content .center { max-width:300px; }
+}
+@media all and (min-width: 840px) {
+    header .content .center { max-width:360px; }
 }
