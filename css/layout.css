@@ -1,12 +1,22 @@
-header {
+header,
+footer,
+#page-content {
     margin:0 2px;
     max-width:960px;
 }
 
 
 @media all and (min-width: 960px) {
-    header {
+    header,
+    footer,
+    #page-content {
         margin:0 auto;
     }
 }
 
+
+
+
+#page-content {
+    background-color: #d3e8f4;
+}

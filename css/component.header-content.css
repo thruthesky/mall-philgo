@@ -1,0 +1,37 @@
+header .content {
+    position:relative;
+}
+
+header .content .left {
+    position:absolute;
+    top:32px;
+    left:0;
+}
+header .content .left img {
+    width:100%;
+}
+header .content .right {
+    position:absolute;
+    top:32px;
+    right:0;
+}
+header .content .right img {
+    width:100%;
+}
+
+header .content .center {
+    margin:16px auto 0;
+    width:360px;
+    text-align: center;
+}
+
+header .content .center img {
+    margin-bottom:10px;
+}
+
+form.search input[type='text'] {
+    border:3px solid #898989;
+    height:40px;
+    box-sizing: border-box;
+    width:100%;
+}
