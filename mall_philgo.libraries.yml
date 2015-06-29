@@ -4,6 +4,7 @@ default:
     theme:
       css/base.css: {}
       css/layout.css: {}
+      css/account.css: {}
       css/component.css: {}
       css/component-grid.css: {}
       css/component.header.css: {}
