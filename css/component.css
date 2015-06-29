@@ -5,7 +5,7 @@ img.fake{
 
 #page-content{
 	max-width:960px;
-	margin:auto;
+	margin:10px 6px 0 6px;
 }
 
 /*top-items*/
@@ -413,6 +413,12 @@ img.fake{
 @media all and ( min-width: 640px ) {
 	.top-items.banner .inner .item > .info{
 		display:block;
+	}
+}
+
+@media all and ( min-width: 960px ) {
+	#page-content{		
+		margin:10px auto 0 auto;
 	}
 }
 /**/
