@@ -5,7 +5,6 @@ default:
       css/base.css: {}
       css/layout.css: {}
       css/component.css: {}
-      css/component.menu.css: {}
       css/component-grid.css: {}
       css/component.header.css: {}
       css/component.header-top.css: {}
