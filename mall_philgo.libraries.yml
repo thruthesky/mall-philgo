@@ -6,7 +6,6 @@ default:
       css/layout.css: {}
       css/account.css: {}
       css/component.css: {}
-      css/component.menu.css: {}
       css/component-grid.css: {}
       css/component.header.css: {}
       css/component.header-top.css: {}
