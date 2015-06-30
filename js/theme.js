@@ -16,17 +16,21 @@ function getInitialVariables(){
 	mall_top_total_items = $(".top-items.banner .item[page]").length;
 	if( mall_top_total_items > 1 ) mall_top_fake_items = 4;
 	mall_top_total_pages = Math.ceil( mall_top_total_items / 2 );
-
-	mall_top_small_total_items = $(".top-items.banner .item[page]").length;
-	if( mall_top_small_total_items > 1 ) mall_top_small_fake_items = 2;
 	
 	if( mall_top_total_pages > 1 ){
-		$(".top-items.banner .inner .item").css('left','-100%');		
+		console.log('a');
+		$(".top-items.banner .inner .item").css('left','-100%');
+	}
+	else{
+		console.log('b');
+		$(".top-items.banner .arrow").css('display','none');
 	}
 }
 
 
 function callback_mall_top_arrow(){
+	if( mall_top_total_pages <= 1 ) return;
+
 	if( mall_top_is_animating ) return;
 	
 	mall_top_is_animating = true;

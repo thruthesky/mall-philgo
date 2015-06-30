@@ -12,6 +12,7 @@ default:
       css/component.header-top.css: {}
       css/component.header-content.css: {}
       css/component.header-menu.css: {}
+      css/component.footer.css: {}
       css/state.css: {}
       css/theme.css: {}
   js:

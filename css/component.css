@@ -8,6 +8,12 @@ img.fake{
 	margin:10px 6px 0 6px;
 }
 
+.default-title{
+	padding:10px 0;
+	font-size:1.5em;
+	color:#393939;	
+}
+
 /*top-items*/
 .top-items.banner{
 	/*display:none;*/
@@ -87,7 +93,7 @@ img.fake{
 .top-items.banner .inner .item > .info .title{
 	height:17px;
 	margin-bottom:5px;
-	font-size:1.3em;
+	font-size:1.2em;
 	overflow:hidden;
 }
 
